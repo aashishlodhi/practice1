@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: lausanne;
+}
+
+html,body{
+    width: 100vw;
+}
+
+#main #nav{
+    
+    width: 100%;
+    height: 70px;
+    background-color:rebeccapurple;
+}
+
+#nav{
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid gray;
+}
+
+#nav .options{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 3vw;
+    color: #fff;
+    width: calc(100%/3);
+    height: 100%;
+    font-size: 13px;
+}
+
+.options.cover{
+    display: flex;
+    padding: 0 3vw;
+    align-items :center;
+    color: #fff;
+    z-index: 999;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    backdrop-filter: blur(5px);
+    background-color: grey;
+}
+
+.cover span{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.options:nth-child(1) .cover{
+    background-color: #fff;
+    color: #000;
+    height: 3px;
+}
+
+
+#home{
+    width: 100%;
+    height: 100vh;
+}
+
+
+.container{
+    position: relative;
+    width: 100%;
+
+}
+
+.container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .text{
+    white-space: nowrap;
+    font-size: 80vw;
+    font-weight: 500;
+    color: #fff;
+}
+
+.container .textdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+}
+
+.text.line{
+    animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) ;
+    position: relative;
+    width: 0%;
+    height: 10px;
+    background-color: #fff;
+
+}
+
+#second{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(100, green, blue);
+}
+
+#third{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(100, green, blue);
+}
+
+#fourth{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(100, green, blue);
+}
